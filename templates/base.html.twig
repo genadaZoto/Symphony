@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block titre %} {% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+
+       
+    </head>
+    <body>
+        {% block contenu %}{% endblock %}
+        {% block body %}{% endblock %}
+        {% block codejs %}
+        <script>
+        </script>
+        {% endblock %}
+    </body>
+</html>

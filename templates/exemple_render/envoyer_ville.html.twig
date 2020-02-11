@@ -1,0 +1,14 @@
+{%  extends "base.html.twig" %}
+
+{% block body %}
+
+La ville est: {{paramVille }}
+
+{% if paramVille== "Bruxelles" %}
+Nous sommes a Bruxelles
+{% else %}
+Nous sommes loin!
+{% endif %}
+
+
+{% endblock %}

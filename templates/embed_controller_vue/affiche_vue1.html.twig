@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block contenu %}
+<div style="display: inline-block; border: 3px solid black; width:300px; height:400px;">
+Je suis div  vue 1
+</div>
+
+{# sans parametre #}
+<div style="float:right; display: inline-block; border: 3px solid red; width:300px; height:400px;">
+Contenu dynamique
+{{render (controller ('App\\Controller\\EmbedControllerVueController::donneesDynamique'))}}
+</div>
+
+
+{# avec des parametres #}
+<div style="float:right; display: inline-block; border: 3px solid red; width:300px; height:400px;">
+Contenu dynamique
+{{render (controller ('App\\Controller\\EmbedControllerVueController::donneesDynamique2', {'nombreVilles':3}))}}
+</div>
+{% endblock %}
